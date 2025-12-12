@@ -1,0 +1,18 @@
+{
+  "name": "christmas-memories",
+  "version": "1.0.0",
+  "description": "3D Christmas photo scene with hand gesture control using Three.js and MediaPipe",
+  "author": "yangmin1522",
+  "license": "MIT",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "build": "echo 'Static site - no build required'"
+  },
+  "keywords": [
+    "three.js",
+    "mediapipe",
+    "hand-gesture",
+    "christmas",
+    "3d-scene"
+  ]
+}
