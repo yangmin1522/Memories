@@ -573,11 +573,33 @@ function setupEvents() {
     });
     document.getElementById('file-input').addEventListener('change', handleImageUpload);
     
+    // Background music auto-play with user interaction fallback
+    const audioElement = document.getElementById('background-music');
+    if (audioElement) {
+        // Try to play automatically (may be blocked by browser)
+        const playPromise = audioElement.play();
+        if (playPromise !== undefined) {
+            playPromise.catch(() => {
+                // Auto-play failed, wait for user interaction
+                const playOnInteraction = () => {
+                    audioElement.play().catch(() => {});
+                    document.removeEventListener('click', playOnInteraction);
+                    document.removeEventListener('keydown', playOnInteraction);
+                };
+                document.addEventListener('click', playOnInteraction, { once: true });
+                document.addEventListener('keydown', playOnInteraction, { once: true });
+            });
+        }
+    }
+    
     // Toggle UI logic - ONLY hide controls, keep title
     window.addEventListener('keydown', (e) => {
         if (e.key.toLowerCase() === 'h') {
             const controls = document.querySelector('.upload-wrapper');
             if (controls) controls.classList.toggle('ui-hidden');
+        }
+    });
+}
         }
     });
 }
