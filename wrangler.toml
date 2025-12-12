@@ -1,0 +1,19 @@
+name = "christmas-memories"
+type = "javascript"
+account_id = ""
+workers_dev = true
+
+[env.production]
+name = "christmas-memories-prod"
+
+[build]
+command = ""
+cwd = ""
+destination = "."
+
+[[env.production.routes]]
+pattern = "example.com/*"
+zone_name = "example.com"
+
+[env.production.vars]
+ENVIRONMENT = "production"
