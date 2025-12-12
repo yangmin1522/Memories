@@ -600,9 +600,6 @@ function setupEvents() {
         }
     });
 }
-        }
-    });
-}
 
 function animate() {
     requestAnimationFrame(animate);
