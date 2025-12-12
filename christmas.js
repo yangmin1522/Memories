@@ -45,11 +45,12 @@ async function init() {
     setupEnvironment(); 
     setupLights();
     createTextures();
+    setupEvents();
     createParticles(); 
     createDust();     
     await createDefaultPhotos();
     setupPostProcessing();
-    setupEvents();
+    
     await initMediaPipe();
     
     const loader = document.getElementById('loader');
