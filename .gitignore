@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Temporary files
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+
+# Compressed archives
+*.zip
+*.rar
+*.7z
+
+# Large media files (keep originals in Memories/restored)
+Memories/restored/
+Memories/*.HEIC
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build outputs
+dist/
+build/
