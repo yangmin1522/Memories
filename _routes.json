@@ -1,15 +1,14 @@
 {
   "version": 1,
   "include": [
-    "/*"
+    "/*.html",
+    "/*.js",
+    "/*.css",
+    "/Memories/*"
   ],
   "exclude": [
-    "/Memories/*",
-    "/compress_images.py",
-    "/convert_to_base64.py",
-    "/restore_from_manifest.py",
+    "/*.py",
     "/.git/*",
-    "/.gitignore",
     "/node_modules/*"
   ]
 }

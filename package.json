@@ -5,8 +5,7 @@
   "author": "yangmin1522",
   "license": "MIT",
   "scripts": {
-    "dev": "python -m http.server 8000",
-    "build": "echo 'Static site - no build required'"
+    "dev": "python -m http.server 8000"
   },
   "keywords": [
     "three.js",
