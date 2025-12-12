@@ -76,7 +76,3 @@ handLandmarker = await HandLandmarker.createFromOptions(vision, {
 ## 7. 额外提示
 - 该页面依赖外部 CDN（Three.js、MediaPipe）。确保在没有联网的环境下，这些模块无法加载，导致脚本错误。
 - 若需要进一步调试截图或错误信息，把控制台的错误消息复制给我，我可以继续帮您分析并给出修复建议。
-
----
-
-如果要我把 `manifest.json` 精简为只含几张图、或者把上传按钮改成按键触发（例如按 `U` 显示），我可以继续修改。
